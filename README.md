@@ -1,3 +1,7 @@
 # NodeJs-with-Mocha
-# nodejs-mocha-testing
-# nodejs-mocha-testing
+
+學習使用 mocha 對 js 進行 功能測試
+
+> npm test
+> mocha test
+
