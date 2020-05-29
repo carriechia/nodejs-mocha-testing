@@ -2,6 +2,7 @@
 
 學習使用 mocha 對 js 進行 功能測試
 
-> npm test
-> mocha test
+> npm test or mocha test
 
+# 參考資料
+https://mochajs.org/
