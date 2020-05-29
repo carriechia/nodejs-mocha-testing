@@ -1,0 +1,273 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-05-29T04:28:18.265Z",
+    "end": "2020-05-29T04:28:18.277Z",
+    "duration": 12,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c9b1002-6f3d-4394-8840-48f7814ad1fd",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "989e02e6-61ef-49cc-b8cc-9d2dc4b18a88",
+          "title": "測試加總函數",
+          "fullFile": "/Users/KAKA/Desktop/NodeJsWorkSpace/testing_sample/test/sum.test.js",
+          "file": "/test/sum.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Expect return 0 if no argument.",
+              "fullTitle": "測試加總函數 Expect return 0 if no argument.",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var argument = [];\nexpect(method.sum(argument)).to.be.equal(0);",
+              "err": {},
+              "uuid": "4d6b2023-c419-4663-b515-958a25e91896",
+              "parentUUID": "989e02e6-61ef-49cc-b8cc-9d2dc4b18a88",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "without array.",
+              "fullTitle": "測試加總函數 without array.",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var arguments = 5;\nexpect(method.sum(arguments)).to.be.false;",
+              "err": {},
+              "uuid": "f348f7f9-4511-41de-a708-5fd6599bcb13",
+              "parentUUID": "989e02e6-61ef-49cc-b8cc-9d2dc4b18a88",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Expect returns the sum if arguments all are numbers.",
+              "fullTitle": "測試加總函數 Expect returns the sum if arguments all are numbers.",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var arguments = [2,3,5];\nexpect(method.sum(arguments)).to.be.equal(10);",
+              "err": {},
+              "uuid": "2cc2a144-d4bc-4cf8-a528-1808d2ae5193",
+              "parentUUID": "989e02e6-61ef-49cc-b8cc-9d2dc4b18a88",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4d6b2023-c419-4663-b515-958a25e91896",
+            "f348f7f9-4511-41de-a708-5fd6599bcb13",
+            "2cc2a144-d4bc-4cf8-a528-1808d2ae5193"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "c5b04b39-84ac-4b06-906f-48af1d5a2b4f",
+          "title": "判斷字串是否為空字串、空白、未定義、null",
+          "fullFile": "/Users/KAKA/Desktop/NodeJsWorkSpace/testing_sample/test/tool.test.js",
+          "file": "/test/tool.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Expect return false when the name is not empty.",
+              "fullTitle": "判斷字串是否為空字串、空白、未定義、null Expect return false when the name is not empty.",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var name = \"Carrie\";\nexpect(method.textIsEmpty(name)).to.be.false;",
+              "err": {},
+              "uuid": "8fb49d65-f762-4599-a218-af696c65598e",
+              "parentUUID": "c5b04b39-84ac-4b06-906f-48af1d5a2b4f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Expect return true when the name is empty.",
+              "fullTitle": "判斷字串是否為空字串、空白、未定義、null Expect return true when the name is empty.",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var name = \"\";\nexpect(method.textIsEmpty(name)).to.be.true;",
+              "err": {},
+              "uuid": "0eae67ba-b7ea-4c15-a7d0-8032d7e97fe1",
+              "parentUUID": "c5b04b39-84ac-4b06-906f-48af1d5a2b4f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Expect return true when the name is null.",
+              "fullTitle": "判斷字串是否為空字串、空白、未定義、null Expect return true when the name is null.",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var name = null;\nexpect(method.textIsEmpty(name)).to.be.true;",
+              "err": {},
+              "uuid": "0dc45deb-7788-4d1c-828d-1becb9f2f82d",
+              "parentUUID": "c5b04b39-84ac-4b06-906f-48af1d5a2b4f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8fb49d65-f762-4599-a218-af696c65598e",
+            "0eae67ba-b7ea-4c15-a7d0-8032d7e97fe1",
+            "0dc45deb-7788-4d1c-828d-1becb9f2f82d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "21440b69-b886-4d52-b219-879ce834c2b5",
+          "title": "數字加上千分位逗號",
+          "fullFile": "/Users/KAKA/Desktop/NodeJsWorkSpace/testing_sample/test/tool.test.js",
+          "file": "/test/tool.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Expect return 1,00 when the number is not 1000",
+              "fullTitle": "數字加上千分位逗號 Expect return 1,00 when the number is not 1000",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var value = \"1,000\";\nvar number = 1000;\nexpect(method.numberWithCommas(number)).to.be.equal(value);",
+              "err": {},
+              "uuid": "95faf420-7769-4d36-b078-635ba39bd6c3",
+              "parentUUID": "21440b69-b886-4d52-b219-879ce834c2b5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Expect the number will return string",
+              "fullTitle": "數字加上千分位逗號 Expect the number will return string",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var number = 1000;\nexpect(method.numberWithCommas(number)).to.be.a('string');",
+              "err": {},
+              "uuid": "5912dbfc-47f5-4360-9cc6-6624b36fcf62",
+              "parentUUID": "21440b69-b886-4d52-b219-879ce834c2b5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "95faf420-7769-4d36-b078-635ba39bd6c3",
+            "5912dbfc-47f5-4360-9cc6-6624b36fcf62"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "4.1.0"
+    }
+  }
+}
